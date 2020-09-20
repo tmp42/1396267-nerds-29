@@ -58,9 +58,14 @@ img {
   list-style: none;
 }
 
+.main-header__basket{
+  color: var(--basic-black);
+}
 
-
-.main-header__navigation__items a{
+.main-header__navigation__items a,
+.sort__items a,
+.number__list__item a,
+.telephone{
   color: var(--basic-black);
 }
 
@@ -208,4 +213,13 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-gray);
   border: none;
+}
+
+.sort__items,
+.items__list,
+.number__list__item,
+.social__items,
+.parthners__items,
+.statistic__items{
+  list-style: none;
 }
