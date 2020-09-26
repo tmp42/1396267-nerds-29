@@ -25,6 +25,13 @@ body {
   background-color: var(--basic-white);
 }
 
+.title{
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
 a {
   text-decoration: none;
 }
@@ -34,18 +41,26 @@ img {
   height: auto;
 }
 
-.title{
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 55px;
+/* Обнуление*/
+.li-none{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.a-color{
   color: var(--basic-black);
 }
 
-.main-header{
-  background-color: var(--basic-gray);
+.visually-hidden{
+  display: none;
 }
 
-.main-header__navigation {
+/*Главная */
+.header{
+  background-color: var(--basic-gray);
+}
+.nav {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -53,33 +68,22 @@ img {
   text-transform: uppercase;
 }
 
-.main-header__navigation__items,
-.main-header__basket{
-  list-style: none;
-}
-
-.main-header__basket{
+.user__link{
   color: var(--basic-black);
 }
 
-.main-header__navigation__items a,
-.sort__items a,
-.number__list__item a,
-.telephone{
-  color: var(--basic-black);
-}
-
-.slider{
+/*Слайдер*/
+.banner{
   background-color: var(--basic-gray);
 }
 
-.slider__title{
+.slider-slide__title{
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 
-.slider__subtitle{
+.slider-slide__text{
   color: var(--basic-dark);
 }
 
@@ -93,6 +97,17 @@ img {
   border: none;
 }
 
+.slider-slide__button{
+  background-color: var(--basic-red);
+}
+
+/*Услуги*/
+.product__name{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
 .button--green{
   background-color: var(--basic-green);
 }
@@ -101,15 +116,11 @@ img {
   background-color: var(--basic-yellow);
 }
 
-.product__items{
-  list-style: none;
+.button--red{
+  background-color: var(--basic-red);
 }
 
-.product__name{
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-}
+/*о компании*/
 .about__title{
   font-weight: 500;
   font-size: 45px;
@@ -121,78 +132,76 @@ img {
   text-transform: uppercase;
 }
 
-.work__items{
-  list-style: none;
-}
-
-.statistic__descriptions{
+.about__subtitle{
   text-transform: uppercase;
   color: var(--basic-black);
 }
 
-.statistic__items__interest{
-  font-weight: bold;
+.about-stats__value{
+  font-weight: 700;
   font-size: 45px;
   line-height: 64px;
   color: var(--basic-black);
 }
 
-.statistic__items__name{
+.about-stats__name{
   font-size: 16px;
   line-height: 18px;
 }
 
-.map__title{
-  font-weight: bold;
+/*Конакты*/
+.contacts__title{
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
 }
 
-.map__description{
+.contacts__description{
   font-size: 16px;
   line-height: 18px;
   color: var(--special-map);
 }
 
-.footer__descriptons h2{
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 36px;
-  color: var(--basic-black);
-}
-
-.number{
+.contacts__phone-number{
   color: var(--special-map);
-  text-decoration: none;
 }
 
-.social__items__link{
+.social__link{
   color: var(--basic-gray);
   text-decoration: none;
 }
 
-.popup__button{
-  color: var(--basic-black);
-  text-decoration: none;
-}
-
-.footer__descriptons p{
+.footer-bottom__discount{
   font-size: 16px;
   line-height: 22px;
   color: var(--special-footer);
 }
 
-.filt__name{
-  font-weight: bold;
+.footer-bottom__headline{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+/*popup*/
+.popup__button{
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+/*каталог*/
+.filter__title{
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
 }
 
-.sort__name{
-  font-weight: bold;
+.catalog__title{
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
@@ -205,7 +214,23 @@ img {
   text-transform: uppercase;
 }
 
-.number__list{
+.product-item__description{
+  background-color: var(--basic-gray);
+}
+
+.product-item__name{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.product-item__text{
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-map);
+}
+
+.pagination__link{
   font: inherit;
   text-align: center;
   color: var(--basic-black);
@@ -213,13 +238,4 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-gray);
   border: none;
-}
-
-.sort__items,
-.items__list,
-.number__list__item,
-.social__items,
-.parthners__items,
-.statistic__items{
-  list-style: none;
 }

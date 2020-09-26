@@ -3,130 +3,197 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet"
-        href="https://fonts.google.com/specimen/PT+Sans?query=pt+sans&preview.text=roboto&preview.text_type=custom">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
-  <a class="main-header__logo">
-    <img src="img/nerds-logo.svg" width="160" height="65" alt="«Nerds»">
-  </a>
-  <nav class="main-header__navigation">
-    <ul class="main-header__navigation__items">
-      <li>
-        <a href="">Студия</a>
+<header class="header">
+  <nav class="nav header__nav">
+    <a class="logo">
+      <img class="logo__image" src="img/nerds-logo.svg" width="160" height="65" alt="Nerds">
+    </a>
+    <ul class="menu li-none">
+      <li class="menu__items">
+        <a class="menu__link a-color" href="">Студия</a>
       </li>
-      <li>
-        <a href="">Клиенты</a>
+      <li class="menu__items">
+        <a class="menu__link a-color" href="">Клиенты</a>
       </li>
-      <li>
-        <a href="catalog.html">Магазин</a>
+      <li class="menu__items">
+        <a class="menu__link a-color" href="catalog.html">Магазин</a>
       </li>
-      <li>
-        <a href="">Контакты</a>
+      <li class="menu__items">
+        <a class="menu__link a-color" href="">Контакты</a>
       </li>
     </ul>
-    <a class="main-header__basket" href="">Корзина</a>
+    <ul class="user li-none">
+      <li class="user__list">
+        <a class="user__link a-color" href="">Корзина</a>
+      </li>
+    </ul>
   </nav>
 </header>
 <main>
   <h1 class="title">Магазин готовых шаблонов «Nerds»</h1>
-  <section class="filtr">
-    <h2 class="filt__name">Стоимость:</h2>
-    <!-- Здесь будет форма фильтра -->
-  </section>
-  <section class="sort">
-    <h2 class="sort__name">Сортировать:</h2>
-    <ul>
-      <li class="sort__items">
-        <a href="#" class="sort__link">
-          по цене
-        </a>
-      </li>
-      <li class="sort__items">
-        <a href="#" class="sort__link">
-          по типу
-        </a>
-      </li>
-      <li class="sort__items">
-        <a href="#" class="sort__link">
-          по названию
-        </a>
-      </li>
-    </ul>
-  </section>
-  <section class="items">
-    <ul class="items__list">
-      <li>
-        <!--кнопки слайдера-->
-        <img src="img/sedona.jpg" width="358" height="576" alt="«sedona»">
-      </li>
-      <li>
-        <!--кнопки слайдера-->
-        <img src="img/pink.jpg" width="358" height="576" alt="«Товар»">
-      </li>
-      <li>
-        <!--кнопки слайдера-->
-        <img src="img/borodinsky.jpg" width="358" height="576" alt="«Товар»">
-      </li>
-      <li>
-        <!--кнопки слайдера-->
-        <img src="img/mishka.jpg" width="358" height="576" alt="«Товар»">
-      </li>
-      <li>
-        <!--кнопки слайдера-->
-        <img src="img/htmlacademy.jpg" width="358" height="576" alt="«Товар»">
-      </li>
-      <li>
-        <!--кнопки слайдера-->
-        <img src="img/kvast.jpg" width="358" height="576" alt="«Товар»">
-      </li>
-    </ul>
-      <ul class="number__list">
-        <li class="number__list__item">
-          <a href="#">1</a>
+  <section class="catalog">
+    <div class="catalog__filter filter">
+      <h3 class="catalog__title filter__title">Стоимость:</h3>
+      <!-- Здесь будет форма фильтра -->
+    </div>
+    <div class="catalog__content">
+      <h3 class="catalog__title">Сортировать:</h3>
+      <ul class="sort li-none">
+        <li class="sort__items">
+          <a href="#" class="sort__link a-color">
+            по цене
+          </a>
         </li>
-        <li class="number__list__item">
-          <a>2</a>
+        <li class="sort__items">
+          <a href="#" class="sort__link a-color">
+            по типу
+          </a>
         </li>
-        <li class="number__list__item">
-          <a href="#">3</a>
+        <li class="sort__items">
+          <a href="#" class="sort__link a-color">
+            по названию
+          </a>
         </li>
-        <li class="number__list__item">
-          <a href="#">Следующая</a>
+        <li class="sort__items sort__items--arrow">
+          <a href="#" class="sort__link sort__link--up"></a>
+          <a href="#" class="sort__link sort__link--down"></a>
         </li>
       </ul>
+      <ul class="product li-none">
+        <li class="product-item product__items">
+          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/sedona.jpg" width="358" height="576" alt="sedona">
+          <div class="product-item__description">
+            <h3 class="product-item__name">Sedona</h3>
+            <p class="product-item__text">Информационный сайт для туристов</p>
+            <a href="#" class="button button-item__button">
+              9 900 Р
+            </a>
+          </div>
+        </li>
+        <li class="product-item product__items">
+          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/pink.jpg" width="358" height="576" alt="Pink app">
+          <div class="product-item__description">
+            <h3 class="product-item__name">pink app</h3>
+            <p class="product-item__text">Продуктовый лендинг приложения для IOS и Android</p>
+            <a href="#" class="button button-item__button">
+              9 900 Р
+            </a>
+          </div>
+        </li>
+        <li class="product-item product__items">
+          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/borodinsky.jpg" width="358" height="576" alt="Barbershop">
+          <div class="product-item__description">
+            <h3 class="product-item__name">barbershop</h3>
+            <p class="product-item__text">Сайт салона красоты. Для мужчин, да</p>
+            <a href="#" class="button button-item__button">
+              9 900 Р
+            </a>
+          </div>
+        </li>
+        <li class="product-item product__items">
+          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/mishka.jpg" width="358" height="576" alt="Mishka">
+          <div class="product-item__description">
+            <h3 class="product-item__name">Mishka</h3>
+            <p class="product-item__text">Сайт салона красоты. Для мужчин, даИнтернет магазин вязанных игрушек</p>
+            <a href="#" class="button button-item__button">
+              9 900 Р
+            </a>
+          </div>
+        </li>
+        <li class="product-item product__items">
+          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/htmlacademy.jpg" width="358" height="576" alt="A PLUS">
+          <div class="product-item__description">
+            <h3 class="product-item__name">a plus</h3>
+            <p class="product-item__text">Лендинг курсов повышения квалификации</p>
+            <a href="#" class="button button-item__button">
+              9 900 Р
+            </a>
+          </div>
+        </li>
+        <li class="product-item product__items">
+          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/kvast.jpg" width="358" height="576" alt="Кваст">
+          <div class="product-item__description">
+            <h3 class="product-item__name">Кваст</h3>
+            <p class="product-item__text">Промо-сайт производителя крафтового кваса</p>
+            <a href="#" class="button button-item__button">
+              9 900 Р
+            </a>
+          </div>
+        </li>
+      </ul>
+      <ul class="pagination li-none">
+        <li class="pagination__item">
+          <a href="#" class="pagination__link a-color">1</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link a-color">2</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link a-color">3</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link a-color">Следующая</a>
+        </li>
+      </ul>
+    </div>
   </section>
   <footer>
-    <section class="map">
-      <h2 class="map__title">Nerds design studio</h2>
-      <p class="map__description">
-        191186, Санкт-Петербург,<br>
-        ул. Б.Конюшенная, д.19/8<br>
-        Тел. <a class="telephone" href="tel:+78122757575">+7 (812) 275-75-75</a>
-      </p>
-      <a class="map__button">Напишите нам</a>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="map" id="map">
+        <!--тут будет карта-->
+      </div>
+      <div class="contacts__block">
+        <h3 class="contacts__title">Nerds design studio</h3>
+        <p class="contacts__description">
+          191186, Санкт-Петербург,
+          ул. Б.Конюшенная, д.19/8</p>
+        <p class="contacts__phone">
+          Тел.
+          <a class="contacts__phone-number" href="tel:+78122757575">+7 (812) 275-75-75</a>
+        </p>
+        <button class="button js-modal">Напишите нам</button>
+      </div>
     </section>
-    <section class="social">
-      <ul class="social__items">
-        <li>
-          <a href="#" class="social__items__link">Вконтакте</a>
+    <section class="footer-bottom">
+      <ul class="social footer-bottom__social li-none">
+        <li class="social__item">
+          <a href="#" class="social__link">Вконтакте
+            <img class="social__img" src="img/.png" width="81" height="81" alt="Вконтакте">
+          </a>
         </li>
-        <li>
-          <a href="#" class="social__items__link">Фейсбук</a>
+        <li class="social__item">
+          <a href="#" class="social__link">Фейсбук
+            <img class="social__img" src="img/.png" width="81" height="81" alt="Фейсбук">
+          </a>
         </li>
-        <li>
-          <a href="#" class="social__items__link">Инстаграм</a>
+        <li class="social__item">
+          <a href="#" class="social__link">Инстаграм
+            <img class="social__img" src="img/.png" width="81" height="81" alt="Инстаграм">
+          </a>
         </li>
       </ul>
-    </section>
-    <section class="footer__descriptons">
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-bottom__block">
+        <p class="footer-bottom__headline">Давайте дружить, это выгодно!</p>
+        <p class="footer-bottom__discount">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </section>
   </footer>
-</main>
+  <section class="popup">
+    <h2 class="popup__title">Напишите нам</h2>
+    <!-- Здесь будет форма -->
+    <a href="#" class="button popup__button js-close">Закрыть</a>
+  </section>
 </body>
 </html>
