@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
@@ -7,8 +7,9 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="page-body">
 <header class="header">
+  <!--навигация-->
   <nav class="nav header__nav">
     <a class="logo a-color">
       <img class="logo__image" src="img/nerds-logo.svg" width="160" height="65" alt="Nerds">
@@ -36,6 +37,7 @@
 </header>
 <main>
   <h1 class="visually-hidden">Магазин готовых шаблонов «Nerds»</h1>
+  <!--слайдер-->
   <section class="banner">
     <h2 class="visually-hidden">Главные качества</h2>
     <div class="banner-slide banner-slide-1">
@@ -56,99 +58,101 @@
       <a href="#" class="button slider-slide__button">Узнать больше</a>
     </div>
   </section>
-
-  <section class="products">
-    <h2 class="visually-hidden">Продукты</h2>
-    <ul class="product__list li-none">
-      <li class="product__item">
-        <img class="product__preview" src="img/web-site.png" width="300" height="146" alt="Веб-сайты">
-        <h3 class="product__name">Веб-сайты</h3>
-        <p class="product__text">Мир никогда не будет прежним после ттого как увидит наш сайт</p>
-        <a href="#" class="button button-red">Заказать</a>
-      </li>
-      <li class="product__item">
-        <img class="product__preview" src="img/apps.png" width="300" height="146" alt="Приложения">
-        <h3 class="product__name">Приложения</h3>
-        <p class="product__description">Покорите топ-10 приложений в AppStore и Google Play.</p>
-        <a href="#" class="button button--green">Заказать</a>
-      </li>
-      <li class="product__item">
-        <img class="product__preview" src="img/presentations.png" width="300" height="146" alt="Презентации">
-        <h3 class="product__name">Презентации</h3>
-        <p class="product__description">Вы даже не подозреваетет, насколько вы изумительны!</p>
-        <a href="#" class="button button-yellow">Заказать</a>
-      </li>
-    </ul>
-  </section>
-
-  <section class="about">
-    <h2 class="visually-hidden">О компании</h2>
-    <div class="about__column">
-      <p class="about__title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-      <p class="about__description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-        превыше креатива. Работаем не покладая рук, как роботы.
-      </p>
-      <p class="about__work">Выполняем заказы на разработку:</p>
-      <ul class="work__list li-none">
-        <li class="work__item">Веб-сайтов любой сложности</li>
-        <li class="work__item">Мобильных приложений для IOS и Android</li>
-        <li class="work__item">Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-    </div>
-    <div class="about__column">
-      <img class="about__logo" src="img/nerds-ill.jpg" width="360" height="208" alt="Nerds">
-      <p class="about__subtitle">с 2004 года любим точность во всем</p>
-      <ul class="about__stats about-stats li-none">
-        <li class="about-stats__item">
-          <p class="about-stats__value">146
-            <sup class="about-stats__percent">%</sup>
-          </p>
-          <p class="about-stats__name">Уровень самоотдачи</p>
+  <!--продукты-->
+  <div class="container">
+    <section class="products">
+      <h2 class="visually-hidden">Продукты</h2>
+      <ul class="product__list li-none">
+        <li class="product__item">
+          <img class="product__preview" src="img/web-site.png" width="300" height="146" alt="Веб-сайты">
+          <h3 class="product__name">Веб-сайты</h3>
+          <p class="product__text">Мир никогда не будет прежним после ттого как увидит наш сайт</p>
+          <a href="#" class="button button-red">Заказать</a>
         </li>
-        <li class="about-stats__item">
-          <p class="about-stats__value">100
-            <sup class="about-stats__percent">%</sup>
-          </p>
-          <p class="about-stats__name">Соблюдение сроков</p>
+        <li class="product__item">
+          <img class="product__preview" src="img/apps.png" width="300" height="146" alt="Приложения">
+          <h3 class="product__name">Приложения</h3>
+          <p class="product__description">Покорите топ-10 приложений в AppStore и Google Play.</p>
+          <a href="#" class="button button--green">Заказать</a>
         </li>
-        <li class="about__stats__item">
-          <p class="about-stats__value">50
-            <sup class="about-stats__percent">%</sup>
-          </p>
-          <p class="about-stats__name">Минимальная предоплата</p>
+        <li class="product__item">
+          <img class="product__preview" src="img/presentations.png" width="300" height="146" alt="Презентации">
+          <h3 class="product__name">Презентации</h3>
+          <p class="product__description">Вы даже не подозреваетет, насколько вы изумительны!</p>
+          <a href="#" class="button button-yellow">Заказать</a>
         </li>
       </ul>
-    </div>
-  </section>
-
-  <section class="partners">
-    <h2 class="visually-hidden">Партнеры</h2>
-    <ul class="partners__list li-none">
-      <li class="partners__item">
-        <a href="#" class="partners__link">
-          <img class="partners__img" src="img/htmlacademy.svg" width="200" height="68" alt="htmlacademy">
-        </a>
-      </li>
-      <li class="partners__item">
-        <a href="#" class="partners__link">
-          <img class="partners__img" src="img/borodinsky.png" width="209" height="90" alt="Барбершоп Бородинский">
-        </a>
-      </li>
-      <li class="partners__item">
-        <a href="#" class="partners__link">
-          <img class="partners__img" src="img/pink.png" width="185" height="52" alt="Pink">
-        </a>
-      </li>
-      <li class="partners__item">
-        <a href="#" class="partners__link">
-          <img class="partners__img" src="img/mishka.png" width="173" height="84" alt="Mishka">
-        </a>
-      </li>
-    </ul>
-  </section>
-
+    </section>
+    <!--о компании-->
+    <section class="about">
+      <h2 class="visually-hidden">О компании</h2>
+      <div class="about__column column-1">
+        <p class="about__title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="about__description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук, как роботы.
+        </p>
+        <p class="about__work">Выполняем заказы на разработку:</p>
+        <ul class="work__list li-none">
+          <li class="work__item">Веб-сайтов любой сложности</li>
+          <li class="work__item">Мобильных приложений для IOS и Android</li>
+          <li class="work__item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="about__column column-2">
+        <img class="about__logo" src="img/nerds-ill.jpg" width="360" height="208" alt="Nerds">
+        <p class="about__subtitle">с 2004 года любим точность во всем</p>
+        <ul class="about__stats about-stats li-none">
+          <li class="about-stats__item">
+            <p class="about-stats__value">146
+              <sup class="about-stats__percent">%</sup>
+            </p>
+            <p class="about-stats__name">Уровень самоотдачи</p>
+          </li>
+          <li class="about-stats__item">
+            <p class="about-stats__value">100
+              <sup class="about-stats__percent">%</sup>
+            </p>
+            <p class="about-stats__name">Соблюдение сроков</p>
+          </li>
+          <li class="about__stats__item">
+            <p class="about-stats__value">50
+              <sup class="about-stats__percent">%</sup>
+            </p>
+            <p class="about-stats__name">Минимальная предоплата</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--партнеры-->
+    <section class="partners">
+      <h2 class="visually-hidden">Партнеры</h2>
+      <ul class="partners__list li-none">
+        <li class="partners__item">
+          <a href="#" class="partners__link">
+            <img class="partners__img" src="img/htmlacademy.svg" width="200" height="68" alt="htmlacademy">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="#" class="partners__link">
+            <img class="partners__img" src="img/borodinsky.png" width="209" height="90" alt="Барбершоп Бородинский">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="#" class="partners__link">
+            <img class="partners__img" src="img/pink.png" width="185" height="52" alt="Pink">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="#" class="partners__link">
+            <img class="partners__img" src="img/mishka.png" width="173" height="84" alt="Mishka">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
 </main>
-<footer>
+<footer class="container">
+  <!--карта-->
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
     <div class="map" id="map">
@@ -166,21 +170,22 @@
       <button class="button js-modal">Напишите нам</button>
     </div>
   </section>
+  <!--соцсети-->
   <section class="footer-bottom">
     <ul class="social footer-bottom__social li-none">
       <li class="social__item">
         <a href="#" class="social__link">Вконтакте
-          <img class="social__img" src="img/.png" width="81" height="81" alt="Вконтакте">
+          <img class="social__img" src="img/vk.svg" width="81" height="81" alt="Вконтакте">
         </a>
       </li>
       <li class="social__item">
         <a href="#" class="social__link">Фейсбук
-          <img class="social__img" src="img/.png" width="81" height="81" alt="Фейсбук">
+          <img class="social__img" src="img/fb.svg" width="12" height="22" alt="Фейсбук">
         </a>
       </li>
       <li class="social__item">
         <a href="#" class="social__link">Инстаграм
-          <img class="social__img" src="img/.png" width="81" height="81" alt="Инстаграм">
+          <img class="social__img" src="img/insta.svg" width="21" height="21" alt="Инстаграм">
         </a>
       </li>
     </ul>
