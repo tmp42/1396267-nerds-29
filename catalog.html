@@ -34,36 +34,38 @@
     </ul>
   </nav>
 </header>
-<main class="container">
+<main>
   <h1 class="title">Магазин готовых шаблонов «Nerds»</h1>
-  <section class="catalog">
+  <section class="catalog container">
     <div class="catalog__filter filter">
       <h3 class="catalog__title filter__title">Стоимость:</h3>
       <!-- Здесь будет форма фильтра -->
     </div>
-    <div class="catalog__content">
-      <h3 class="catalog__title">Сортировать:</h3>
-      <ul class="sort li-none">
-        <li class="sort__items">
-          <a href="#" class="sort__link a-color">
-            по цене
-          </a>
-        </li>
-        <li class="sort__items">
-          <a href="#" class="sort__link a-color">
-            по типу
-          </a>
-        </li>
-        <li class="sort__items">
-          <a href="#" class="sort__link a-color">
-            по названию
-          </a>
-        </li>
-        <li class="sort__items sort__items--arrow">
-          <a href="#" class="sort__link sort__link--up"></a>
-          <a href="#" class="sort__link sort__link--down"></a>
-        </li>
-      </ul>
+    <div class="catalog__content catalog-content">
+      <div class="catalog-content__sort">
+        <h3 class="catalog__title">Сортировать:</h3>
+        <ul class="sort li-none">
+          <li class="sort__items">
+            <a href="#" class="sort__link a-color">
+              по цене
+            </a>
+          </li>
+          <li class="sort__items">
+            <a href="#" class="sort__link a-color">
+              по типу
+            </a>
+          </li>
+          <li class="sort__items">
+            <a href="#" class="sort__link a-color">
+              по названию
+            </a>
+          </li>
+          <li class="sort__items sort__items--arrow">
+            <a href="#" class="sort__link sort__link--up"></a>
+            <a href="#" class="sort__link sort__link--down"></a>
+          </li>
+        </ul>
+      </div>
       <ul class="product li-none">
         <li class="product-item product__items">
           <img src="img/windows.svg" width="358" height="40" alt="кнопки">
@@ -149,38 +151,21 @@
     </div>
   </section>
   <footer class="container">
-    <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <div class="map" id="map">
-        <!--тут будет карта-->
-      </div>
-      <div class="contacts__block">
-        <h3 class="contacts__title">Nerds design studio</h3>
-        <p class="contacts__description">
-          191186, Санкт-Петербург,
-          ул. Б.Конюшенная, д.19/8</p>
-        <p class="contacts__phone">
-          Тел.
-          <a class="contacts__phone-number" href="tel:+78122757575">+7 (812) 275-75-75</a>
-        </p>
-        <button class="button js-modal">Напишите нам</button>
-      </div>
-    </section>
     <section class="footer-bottom">
       <ul class="social footer-bottom__social li-none">
         <li class="social__item">
-          <a href="#" class="social__link">Вконтакте
-            <img class="social__img" src="img/.png" width="81" height="81" alt="Вконтакте">
+          <a href="#" class="social__link">
+            <img class="social__img" src="img/vk.svg" width="81" height="81" alt="Вконтакте">
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link">Фейсбук
-            <img class="social__img" src="img/.png" width="81" height="81" alt="Фейсбук">
+          <a href="#" class="social__link">
+            <img class="social__img" src="img/fb.svg" width="12" height="22" alt="Фейсбук">
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link">Инстаграм
-            <img class="social__img" src="img/.png" width="81" height="81" alt="Инстаграм">
+          <a href="#" class="social__link">
+            <img class="social__img" src="img/insta.svg" width="21" height="21" alt="Инстаграм">
           </a>
         </li>
       </ul>
