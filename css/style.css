@@ -10,23 +10,33 @@
   --basic-yellow: #EFC849;
   --special: #888888;
   --special-map: #666666;
-  --special-footer: #444444;;
+  --special-footer: #444444;
+
+  --f-family: "Roboto", Arial, sans-serif;
 }
 
 body {
   min-width: 1160px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: var(--f-family);
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
   color: var(--basic-dark);
-  background-color: var(--basic-white);
 }
 
 .page {
   height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
 }
 
 .page-body {
@@ -130,13 +140,16 @@ img {
 }
 
 .button {
-  font: inherit;
+  font-family: inherit;
   text-align: center;
   color: var(--basic-white);
-  vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--basic-red);
-  border: none;
+  background-color: transparent;
+  border: 0;
+  transition: all 0.3s ease;
+  outline: none;
+  padding-top: 17px;
+  padding-bottom: 15px;
 }
 
 .slider-slide__button{
@@ -355,6 +368,10 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--special-map);
+}
+
+.button-item__button{
+  background-color: var(--basic-red);
 }
 
 .pagination__link{
