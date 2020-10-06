@@ -7,9 +7,9 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="page-body">
 <header class="header">
-  <nav class="nav header__nav">
+  <nav class="nav header__nav container">
     <a class="logo">
       <img class="logo__image" src="img/nerds-logo.svg" width="160" height="65" alt="Nerds">
     </a>
@@ -38,12 +38,12 @@
   <h1 class="title">Магазин готовых шаблонов «Nerds»</h1>
   <section class="catalog container">
     <div class="catalog__filter filter">
-      <h3 class="catalog__title filter__title">Стоимость:</h3>
+      <h3 class="catalog__title filter__title p-none">Стоимость:</h3>
       <!-- Здесь будет форма фильтра -->
     </div>
     <div class="catalog__content catalog-content">
       <div class="catalog-content__sort">
-        <h3 class="catalog__title">Сортировать:</h3>
+        <h3 class="catalog__title p-none">Сортировать:</h3>
         <ul class="sort li-none">
           <li class="sort__items">
             <a href="#" class="sort__link a-color">
@@ -71,8 +71,8 @@
           <img src="img/windows.svg" width="358" height="40" alt="кнопки">
           <img src="img/sedona.png" width="358" height="576" alt="sedona">
           <div class="product-item__description">
-            <h3 class="product-item__name">Sedona</h3>
-            <p class="product-item__text">Информационный сайт для туристов</p>
+            <h3 class="product-item__name p-none">Sedona</h3>
+            <p class="product-item__text p-none">Информационный сайт для туристов</p>
             <a href="#" class="button button-item__button">
               9 900 Р
             </a>
@@ -82,8 +82,8 @@
           <img src="img/windows.svg" width="358" height="40" alt="кнопки">
           <img src="img/pink.png" width="358" height="576" alt="Pink app">
           <div class="product-item__description">
-            <h3 class="product-item__name">pink app</h3>
-            <p class="product-item__text">Продуктовый лендинг приложения для IOS и Android</p>
+            <h3 class="product-item__name p-none">pink app</h3>
+            <p class="product-item__text p-none">Продуктовый лендинг приложения для IOS и Android</p>
             <a href="#" class="button button-item__button">
               9 900 Р
             </a>
@@ -91,10 +91,10 @@
         </li>
         <li class="product-item product__items">
           <img src="img/windows.svg" width="358" height="40" alt="кнопки">
-          <img src="img/borodinsky.png" width="358" height="576" alt="Barbershop">
+          <img src="img/barbershop.png" width="358" height="576" alt="Barbershop">
           <div class="product-item__description">
-            <h3 class="product-item__name">barbershop</h3>
-            <p class="product-item__text">Сайт салона красоты. Для мужчин, да</p>
+            <h3 class="product-item__name p-none">barbershop</h3>
+            <p class="product-item__text p-none">Сайт салона красоты. Для мужчин, да</p>
             <a href="#" class="button button-item__button">
               9 900 Р
             </a>
@@ -104,8 +104,8 @@
           <img src="img/windows.svg" width="358" height="40" alt="кнопки">
           <img src="img/mishka.png" width="358" height="576" alt="Mishka">
           <div class="product-item__description">
-            <h3 class="product-item__name">Mishka</h3>
-            <p class="product-item__text">Сайт салона красоты. Для мужчин, даИнтернет магазин вязанных игрушек</p>
+            <h3 class="product-item__name p-none">Mishka</h3>
+            <p class="product-item__text p-none">Сайт салона красоты. Для мужчин, даИнтернет магазин вязанных игрушек</p>
             <a href="#" class="button button-item__button">
               9 900 Р
             </a>
@@ -115,8 +115,8 @@
           <img src="img/windows.svg" width="358" height="40" alt="кнопки">
           <img src="img/aplus.png" width="358" height="576" alt="A PLUS">
           <div class="product-item__description">
-            <h3 class="product-item__name">a plus</h3>
-            <p class="product-item__text">Лендинг курсов повышения квалификации</p>
+            <h3 class="product-item__name p-none">a plus</h3>
+            <p class="product-item__text p-none">Лендинг курсов повышения квалификации</p>
             <a href="#" class="button button-item__button">
               9 900 Р
             </a>
@@ -126,8 +126,8 @@
           <img src="img/windows.svg" width="358" height="40" alt="кнопки">
           <img src="img/kvast.png" width="358" height="576" alt="Кваст">
           <div class="product-item__description">
-            <h3 class="product-item__name">Кваст</h3>
-            <p class="product-item__text">Промо-сайт производителя крафтового кваса</p>
+            <h3 class="product-item__name p-none">Кваст</h3>
+            <p class="product-item__text p-none">Промо-сайт производителя крафтового кваса</p>
             <a href="#" class="button button-item__button">
               9 900 Р
             </a>
@@ -153,25 +153,34 @@
   <footer class="container">
     <section class="footer-bottom">
       <ul class="social footer-bottom__social li-none">
-        <li class="social__item">
-          <a href="#" class="social__link">
-            <img class="social__img" src="img/vk.svg" width="81" height="81" alt="Вконтакте">
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link">
-            <img class="social__img" src="img/fb.svg" width="12" height="22" alt="Фейсбук">
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link">
-            <img class="social__img" src="img/insta.svg" width="21" height="21" alt="Инстаграм">
-          </a>
-        </li>
+         <li class="social__item">
+        <a href="#" class="social__link">
+          <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
+</svg>
+
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+</svg>
+
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
+</svg>
+
+        </a>
+      </li>
       </ul>
       <div class="footer-bottom__block">
-        <p class="footer-bottom__headline">Давайте дружить, это выгодно!</p>
-        <p class="footer-bottom__discount">Скидка 10% для друзей из социальных сетей.</p>
+        <p class="footer-bottom__headline p-none">Давайте дружить, это выгодно!</p>
+        <p class="footer-bottom__discount p-none">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </section>
   </footer>
