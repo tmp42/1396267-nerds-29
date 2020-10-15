@@ -40,7 +40,7 @@
   <!--слайдер-->
   <section class="banner">
     <h2 class="visually-hidden">Главные качества</h2>
-    <div class="banner-slide banner-slide-1">
+    <div class="banner-slide banner-slide-1 slide-current">
     <div class="slider-slide__info">
       <p class="slider-slide__title p-none">Долго, дорого,<br> скрупулезно.</p>
       <p class="slider-slide__text p-none">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
@@ -62,6 +62,11 @@
         начинается.</p>
       <a href="#" class="button slider-slide__button">Узнать больше</a>
       </div>
+    </div>
+    <div class="slider-controls">
+      <button type="button" aria-label="Первый слайд"></button>
+      <button type="button" aria-label="Второй слайд"></button>
+      <button class="current" type="button" aria-label="Третий слайд"></button>
     </div>
   </section>
   <!--продукты-->
@@ -93,7 +98,7 @@
     <section class="about border-bot">
       <h2 class="visually-hidden">О компании</h2>
       <div class="about__column column-1">
-        <p class="about__title p-none">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="about__title p-none">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
         <p class="about__description p-none">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.
         </p>
@@ -106,7 +111,7 @@
       </div>
       <div class="about__column column-2">
         <img class="about__logo" src="img/nerds-ill.jpg" width="360" height="208" alt="Nerds">
-        <p class="about__subtitle p-none">с 2004 года любим точность во всем</p>
+        <p class="about__subtitle p-none">с 2004 года любим точность во всем:</p>
         <ul class="about__stats about-stats li-none">
           <li class="about-stats__item">
             <p class="about-stats__value p-none">146
@@ -162,7 +167,7 @@
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
     <div class="map" id="map">
-      <!--тут будет карта-->
+      <img class="map__img" src="img/map.png" width="1920" height="416" alt="Mishka">
     </div>
     <div class="contacts__block">
       <h3 class="contacts__title">Nerds design studio</h3>
@@ -170,11 +175,12 @@
         191186, Санкт-Петербург,
         ул. Б.Конюшенная, д.19/8</p>
       <p class="contacts__phone p-none">
-        Тел.
+        тел.
         <a class="contacts__phone-number a-color" href="tel:+78122757575">+7 (812) 275-75-75</a>
       </p>
-      <button class="button js-modal">Напишите нам</button>
+      <button class="button button--map js-modal">Напишите нам</button>
     </div>
+    <img class="marker__img" src="img/map-marker.png" width="231" height="190" alt="Mishka">
   </section>
   <!--соцсети-->
   <section class="footer-bottom container">
