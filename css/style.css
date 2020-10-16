@@ -13,6 +13,8 @@
   --special-footer: #444444;
   --special-filter: rgba(77,77,77, 0.4);
   --special-paggination: #DBDBDB;
+  --special-close: rgba(251, 86, 90, 0.3);
+  --special-hover: #E74246;
 
   --f-family: "Roboto", Arial, sans-serif;
   --f-size: 16px;
@@ -105,7 +107,7 @@ img {
 }
 
 .border-bot{
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid var(--basic-gray);
 }
 
 /*Главная */
@@ -133,7 +135,7 @@ img {
   top: 43px;
   width: 73px;
   height: 2px;
-  border-bottom: 2px solid #FB565A;
+  border-bottom: 2px solid var( --basic-red);
   background-position: 0 0;
 }
 
@@ -175,7 +177,7 @@ img {
 .header__nav a:focus,
 .header__nav a:hover,
 .header__nav a:focus {
-  color: #FB565A;
+  color: var( --basic-red);
 }
 
 /*Слайдер*/
@@ -258,7 +260,7 @@ img {
 }
 
 .slider-slide__button:hover{
-  background-color: #E74246;
+  background-color: var(--special-hover);
 }
 
 .slider-controls button {
@@ -266,14 +268,14 @@ img {
   width: 17px;
   height: 17px;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
   margin-left: 15px;
 }
 
 .slider-controls .current {
-  background-color: #ffffff;
+  background-color: var(--basic-white);
 }
 
 /*Услуги*/
@@ -403,7 +405,7 @@ img {
 
 .work__item:before{
   content: "";
-  border: 1px solid #FB565A;
+  border: 1px solid var(--basic-red);
   display: block;
   position: absolute;
   width: 25px;
@@ -420,6 +422,11 @@ img {
 
 .partners__item{
   justify-self: center;
+  opacity: 0.3;
+}
+
+.partners__item:hover{
+  opacity: 1;
 }
 
 .partners__link{
@@ -845,4 +852,131 @@ img {
 
 .pagination{
   display: flex;
+}
+
+/*popup*/
+.popup {
+  display: none;
+  width: 960px;
+  height: 590px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.button--popup{
+  background-color: var(--basic-red);
+  margin-left: 56px;
+  padding: 17px 83px 15px;
+  margin-right: auto;
+}
+
+.popup__title{
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: var(--special-close);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.appointment-item {
+  width: 360px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+.appointment-item.message {
+  width: 760px;
+}
+
+.appointment-item label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 15px;
+}
+
+.appointment-item input {
+  width: 360px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid var( --special-paggination);
+  box-sizing: border-box;
+}
+
+.appointment-item.message input{
+  width: 760px;
+  height: 118px;
+}
+
+.appointment-item input:focus {
+  border-color: var(--special);
+}
+
+.appointment .button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 0;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.button--popup:hover{
+  background-color: var(--special-hover);
+  cursor: pointer;
+}
+
+.button--map:hover{
+  background-color: var(--special-hover);
+  cursor: pointer;
 }

@@ -64,9 +64,9 @@
       </div>
     </div>
     <div class="slider-controls">
-      <button type="button" aria-label="Первый слайд"></button>
-      <button type="button" aria-label="Второй слайд"></button>
-      <button class="current" type="button" aria-label="Третий слайд"></button>
+      <button type="button" class="current button1" aria-label="Первый слайд"></button>
+      <button type="button" class="button2" aria-label="Второй слайд"></button>
+      <button class="button3" type="button" aria-label="Третий слайд"></button>
     </div>
   </section>
   <!--продукты-->
@@ -218,8 +218,23 @@
 </footer>
 <section class="popup">
   <h2 class="popup__title">Напишите нам</h2>
-  <!-- Здесь будет форма -->
-  <a href="#" class="button popup__button js-close">Закрыть</a>
+  <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+    <p class="appointment-item">
+      <label for="appointment-name">Ваше имя:</label>
+      <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p class="appointment-item">
+      <label for="appointment-email">Ваш email</label>
+      <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
+    </p>
+    <p class="appointment-item message">
+      <label for="appointment-message">Текст письма</label>
+      <input id="appointment-message" type="tel" name="mail" placeholder="В свободной форме">
+    </p>
+    <button class="button button--popup js-modal" type="submit">Отправить</button>
+  </form>
+  <a href="#" class="button popup__button modal-close"></a>
 </section>
+<script src="js/scripts.js"></script>
 </body>
 </html>
