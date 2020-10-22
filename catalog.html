@@ -10,7 +10,7 @@
 <body class="page-body">
 <header class="header">
   <nav class="nav header__nav container">
-    <a class="logo">
+    <a class="logo" href="/index.html">
       <img class="logo__image" src="img/nerds-logo.svg" width="160" height="65" alt="Nerds">
     </a>
     <ul class="menu li-none">
@@ -69,26 +69,35 @@
         <fieldset class="filter-item__next">
           <legend>Сетка:</legend>
           <ul>
-            <li class="filter-option filter-radio">
-              <input class="visually-hidden filter-input-radio filter-input" type="radio"
-                     name="adaptive" value="adaptive" id="filter-adaptive" checked>
-              <label for="filter-adaptive">Адаптированная</label>
+            <li class="form__group">
+              <label class="label">
+                <input type="radio" class="visually-hidden" id="radio-1" name="element" value="element-first"
+                       checked>
+                <span class="radio"></span>
+                Адаптивная
+              </label>
             </li>
-            <li class="filter-option filter-radio">
-              <input class="visually-hidden filter-input-radio filter-input" type="radio" value="fix"
-                     name="fix" id="filter-fix">
-              <label for="filter-fix">Фиксированная</label>
+            <li class="form__group">
+              <label class="label">
+                <input type="radio" class="visually-hidden" id="radio-2" name="element" value="element-first"
+                       checked>
+                <span class="radio"></span>
+                Фиксированная
+              </label>
             </li>
-            <li class="filter-option filter-radio">
-              <input class="visually-hidden filter-input-radio filter-input" type="radio" value="rubber"
-                     name="rubber" id="filter-rubber">
-              <label for="filter-rubber">Резиновая</label>
+            <li class="form__group">
+              <label class="label">
+                <input type="radio" class="visually-hidden" id="radio-3" name="element" value="element-first"
+                       checked>
+                <span class="radio"></span>
+                Резиновая
+              </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="filter-item__next">
           <legend>Особенности:</legend>
-          <ul>
+          <ul class="additional">
             <li class="filter-option filter-checkbox">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="product-group"
                      id="filter-slide">
@@ -107,7 +116,7 @@
             <li class="filter-option filter-checkbox">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="product-group"
                      id="filter-gallery">
-              <label for="filter-gallery">Галлерея</label>
+              <label for="filter-gallery">Галерея</label>
             </li>
             <li class="filter-option filter-checkbox">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="product-group"
@@ -124,7 +133,7 @@
         <h3 class="catalog__title p-none">Сортировать:</h3>
         <ul class="sort li-none">
           <li class="sort__items">
-            <a href="#" class="sort__link a-color">
+            <a href="#" class="sort__link active a-color">
               по цене
             </a>
           </li>
@@ -139,17 +148,18 @@
             </a>
           </li>
           <li class="sort__items sort__items--arrow">
-            <a href="#" class="sort__link sort__link--up">
+            <a href="#" class="sort__link active sort__link--up">
               <img class="partners__img" src="img/down.svg" width="11" height="10" alt="down">
             </a>
-            <a href="#" class="sort__link sort__link--down"></a>
-            <img class="partners__img" src="img/up.svg" width="11" height="10" alt="up">
+            <a href="#" class="sort__link sort__link--down">
+              <img class="partners__img" src="img/up.svg" width="11" height="10" alt="up">
+            </a>
           </li>
         </ul>
       </div>
       <ul class="product li-none">
         <li class="product-item product__items">
-          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/windows.svg" class="button__catalog" width="358" height="40" alt="кнопки">
           <img src="img/sedona.png" width="358" height="576" alt="sedona">
           <div class="product-item__description">
             <h3 class="product-item__name p-none">Sedona</h3>
@@ -160,7 +170,7 @@
           </div>
         </li>
         <li class="product-item product__items">
-          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/windows.svg" class="button__catalog" width="358" height="40" alt="кнопки">
           <img src="img/pink.png" width="358" height="576" alt="Pink app">
           <div class="product-item__description">
             <h3 class="product-item__name p-none">pink app</h3>
@@ -171,7 +181,7 @@
           </div>
         </li>
         <li class="product-item product__items">
-          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/windows.svg" class="button__catalog" width="358" height="40" alt="кнопки">
           <img src="img/barbershop.png" width="358" height="576" alt="Barbershop">
           <div class="product-item__description">
             <h3 class="product-item__name p-none">barbershop</h3>
@@ -182,7 +192,7 @@
           </div>
         </li>
         <li class="product-item product__items">
-          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/windows.svg" class="button__catalog" width="358" height="40" alt="кнопки">
           <img src="img/mishka.png" width="358" height="576" alt="Mishka">
           <div class="product-item__description">
             <h3 class="product-item__name p-none">Mishka</h3>
@@ -194,7 +204,7 @@
           </div>
         </li>
         <li class="product-item product__items">
-          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/windows.svg" class="button__catalog" width="358" height="40" alt="кнопки">
           <img src="img/aplus.png" width="358" height="576" alt="A PLUS">
           <div class="product-item__description">
             <h3 class="product-item__name p-none">a plus</h3>
@@ -205,7 +215,7 @@
           </div>
         </li>
         <li class="product-item product__items">
-          <img src="img/windows.svg" width="358" height="40" alt="кнопки">
+          <img src="img/windows.svg" class="button__catalog" width="358" height="40" alt="кнопки">
           <img src="img/kvast.png" width="358" height="576" alt="Кваст">
           <div class="product-item__description">
             <h3 class="product-item__name p-none">Кваст</h3>
@@ -227,89 +237,91 @@
           <a href="#" class="pagination__link a-color">3</a>
         </li>
         <li class="pagination__item">
-          <a href="#" class="pagination__link a-color">Следующая</a>
+          <a href="#" class="pagination__link last_link a-color">Следующая</a>
         </li>
       </ul>
     </div>
   </section>
-  <footer class="footer">
-    <!--карта-->
-    <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <div class="map" id="map">
-        <img class="map__img" src="img/map.png" width="1920" height="416" alt="Mishka">
-      </div>
+</main>
+<footer class="footer catalog-footer">
+  <!--карта-->
+  <div class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+
+    <div class="map" id="map"></div>
+    <div class="container contacts__inner">
       <div class="contacts__block">
-        <h3 class="contacts__title">Nerds design studio</h3>
+        <h3 class="contacts__title p-none">Nerds design studio</h3>
         <p class="contacts__description p-none">
           191186, Санкт-Петербург,
-          ул. Б.Конюшенная, д.19/8</p>
+          ул. Б. Конюшенная, д. 19/8</p>
         <p class="contacts__phone p-none">
           тел.
           <a class="contacts__phone-number a-color" href="tel:+78122757575">+7 (812) 275-75-75</a>
         </p>
-        <button class="button button--map js-modal">Напишите нам</button>
+        <button class="button button--red button--map js-modal">Напишите нам</button>
       </div>
-      <img class="marker__img" src="img/map-marker.png" width="231" height="190" alt="Mishka">
-    </section>
-    <!--соцсети-->
-    <section class="footer-bottom container">
-      <ul class="social footer-bottom__social li-none">
-        <li class="social__item">
-          <a href="#" class="social__link">
-            <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z"
-                fill="white"/>
-            </svg>
+    </div>
+  </div>
+  <!--соцсети-->
+  <section class="footer-bottom container">
+    <ul class="social footer-bottom__social li-none">
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z"
+              fill="white"/>
+          </svg>
 
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link">
-            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
-            </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+          </svg>
 
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link">
-            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
-                    fill="white"/>
-            </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
+                  fill="white"/>
+          </svg>
 
-          </a>
-        </li>
-      </ul>
-      <div class="footer-bottom__block">
-        <p class="footer-bottom__headline p-none">Давайте дружить, это выгодно!</p>
-        <p class="footer-bottom__discount p-none">Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-    </section>
-  </footer>
-  <section class="popup">
-    <h2 class="popup__title">Напишите нам</h2>
-    <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="appointment-item">
-        <label for="appointment-name">Ваше имя:</label>
-        <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p class="appointment-item">
-        <label for="appointment-email">Ваш email</label>
-        <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
-      </p>
-      <p class="appointment-item message">
-        <label for="appointment-message">Текст письма</label>
-        <input id="appointment-message" type="tel" name="mail" placeholder="В свободной форме">
-      </p>
-      <button class="button button--popup js-modal" type="submit">Отправить</button>
-    </form>
-    <a href="#" class="button popup__button modal-close"></a>
+        </a>
+      </li>
+    </ul>
+    <div class="footer-bottom__block">
+      <p class="footer-bottom__headline p-none">Давайте дружить, это выгодно!</p>
+      <p class="footer-bottom__discount p-none">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </section>
-</main>
+</footer>
+<section class="popup">
+  <h2 class="popup__title p-none">Напишите нам</h2>
+  <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+    <p class="appointment-item">
+      <label for="appointment-name">Ваше имя:</label>
+      <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p class="appointment-item">
+      <label for="appointment-email">Ваш email</label>
+      <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
+    </p>
+    <p class="appointment-item message">
+      <label for="appointment-message">Текст письма</label>
+      <input id="appointment-message" type="tel" name="mail" placeholder="В свободной форме">
+    </p>
+    <button class="button button--popup js-modal" type="submit">Отправить</button>
+  </form>
+  <a href="#" class="button popup__button modal-close"></a>
+</section>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=4b02bf2d-c6c2-4ff9-b953-adf5ab487b54"
+        type="text/javascript"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
