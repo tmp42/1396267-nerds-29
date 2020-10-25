@@ -1028,6 +1028,7 @@ img {
   box-sizing: border-box;
   border-radius: 3px;
   padding: 28px 22px 15px;
+  cursor: auto;
 }
 
 .pagination__item.active .pagination__link {
@@ -1037,6 +1038,14 @@ img {
 
 .pagination {
   display: flex;
+}
+
+.pagination__item.active:hover{
+  background-color: var(--basic-white);
+}
+
+.pagination__item.active:active{
+  box-shadow: none;
 }
 
 .pagination__item:hover {
