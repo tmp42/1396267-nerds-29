@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -142,10 +142,10 @@
           </li>
           <li class="sort__items sort__items--arrow">
             <a href="#" class="sort__link active sort__link--up">
-              <img class="partners__img" src="img/down.svg" width="11" height="10" alt="down">
+              <img class="sort__link__img" src="img/down.svg" width="11" height="10" alt="down">
             </a>
             <a href="#" class="sort__link sort__link--down">
-              <img class="partners__img" src="img/up.svg" width="11" height="10" alt="up">
+              <img class="sort__link__img" src="img/up.svg" width="11" height="10" alt="up">
             </a>
           </li>
         </ul>
@@ -189,8 +189,7 @@
           <img src="img/mishka.png" width="358" height="576" alt="Mishka">
           <div class="product-item__description">
             <h3 class="product-item__name p-none">Mishka</h3>
-            <p class="product-item__text p-none">Сайт салона красоты. Для мужчин, даИнтернет магазин вязанных
-              игрушек</p>
+            <p class="product-item__text p-none">Интернет-магазин  вязаных игрушек</p>
             <a href="#" class="button button-item__button">
               9 900 Р
             </a>
@@ -220,11 +219,11 @@
         </li>
       </ul>
       <ul class="pagination li-none">
-        <li class="pagination__item active">
-          <a class="pagination__link a-color">1</a>
+        <li class="pagination__item">
+          <a class="pagination__link active a-color">1</a>
         </li>
         <li class="pagination__item">
-          <a class="pagination__link a-color">2</a>
+          <a href="#" class="pagination__link a-color">2</a>
         </li>
         <li class="pagination__item">
           <a href="#" class="pagination__link a-color">3</a>
@@ -294,24 +293,26 @@
     </div>
   </section>
 </footer>
-<section class="popup">
-  <h2 class="popup__title p-none">Напишите нам</h2>
-  <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-    <p class="appointment-item">
-      <label for="appointment-name">Ваше имя:</label>
-      <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-    </p>
-    <p class="appointment-item">
-      <label for="appointment-email">Ваш email</label>
-      <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
-    </p>
-    <p class="appointment-item message">
-      <label for="appointment-message">Текст письма</label>
-      <input id="appointment-message" type="tel" name="mail" placeholder="В свободной форме">
-    </p>
-    <button class="button--popup js-modal" type="submit">Отправить</button>
-  </form>
-  <a href="#" class="popup__button modal-close"></a>
+<section class="popup-wrapper">
+  <div class="popup">
+    <h2 class="popup__title p-none">Напишите нам</h2>
+    <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="appointment-item p-none">
+        <label for="appointment-name">Ваше имя:</label>
+        <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="appointment-item  p-none">
+        <label for="appointment-email">Ваш email:</label>
+        <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
+      </p>
+      <p class="appointment-item message  p-none">
+        <label for="appointment-message">Текст письма:</label>
+        <textarea name="text" placeholder="В свободной форме" id="appointment-message"></textarea>
+      </p>
+      <button class="button button--popup button--red js-modal" type="submit">Отправить</button>
+    </form>
+    <a class="popup__button modal-close"></a>
+  </div>
 </section>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=4b02bf2d-c6c2-4ff9-b953-adf5ab487b54"
         type="text/javascript"></script>

@@ -40,34 +40,37 @@
   <!--слайдер-->
   <section class="banner">
     <h2 class="visually-hidden">Главные качества</h2>
-    <div class="banner-slide banner-slide-1 slide-current">
-      <div class="slider-slide__info">
-        <p class="slider-slide__title p-none">Долго, дорого,<br> скрупулезно.</p>
-        <p class="slider-slide__text p-none">Математически выверенный дизайн <br> для вашего сайта или мобильного
-          приложения.</p>
-        <a href="#" class="button slider-slide__button">Узнать больше</a>
+    <div class="container">
+      <div class="banner-slide banner-slide-1 slide-current">
+        <div class="slider-slide__info">
+          <p class="slider-slide__title p-none">Долго, дорого,<br> скрупулезно.</p>
+          <p class="slider-slide__text p-none">Математически выверенный дизайн <br> для вашего сайта или мобильного
+            приложения.</p>
+          <a href="#" class="button slider-slide__button">Узнать больше</a>
+        </div>
       </div>
-    </div>
-    <div class="banner-slide banner-slide-2">
-      <div class="slider-slide__info">
-        <p class="slider-slide__title p-none">Любим математику как никто другой</p>
-        <p class="slider-slide__text p-none">Никакого креатива, только математические формулы для расчета идеальных
-          пропорций</p>
-        <a href="#" class="button slider-slide__button">Узнать больше</a>
+      <div class="banner-slide banner-slide-2">
+        <div class="slider-slide__info">
+          <p class="slider-slide__title p-none">Любим математику как никто другой</p>
+          <p class="slider-slide__text p-none">Никакого креатива, только математические формулы для расчета идеальных
+            пропорций</p>
+          <a href="#" class="button slider-slide__button">Узнать больше</a>
+        </div>
       </div>
-    </div>
-    <div class="banner-slide banner-slide-3">
-      <div class="slider-slide__info">
-        <p class="slider-slide__title p-none">Только ночь,<br>только хардкор</p>
-        <p class="slider-slide__text p-none">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только
-          начинается.</p>
-        <a href="#" class="button slider-slide__button">Узнать больше</a>
+      <div class="banner-slide banner-slide-3">
+        <div class="slider-slide__info">
+          <p class="slider-slide__title p-none">Только ночь,<br>только хардкор</p>
+          <p class="slider-slide__text p-none">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа
+            только
+            начинается.</p>
+          <a href="#" class="button slider-slide__button">Узнать больше</a>
+        </div>
       </div>
-    </div>
-    <div class="slider-controls">
-      <button type="button" class="current button" aria-label="Первый слайд"></button>
-      <button type="button" class="button" aria-label="Второй слайд"></button>
-      <button type="button" class="button" aria-label="Третий слайд"></button>
+      <div class="slider-controls">
+        <button type="button" class="current button" aria-label="Первый слайд"></button>
+        <button type="button" class="button" aria-label="Второй слайд"></button>
+        <button type="button" class="button" aria-label="Третий слайд"></button>
+      </div>
     </div>
   </section>
   <!--продукты-->
@@ -221,24 +224,26 @@
     </div>
   </section>
 </footer>
-<section class="popup">
-  <h2 class="popup__title p-none">Напишите нам</h2>
-  <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-    <p class="appointment-item">
-      <label for="appointment-name">Ваше имя:</label>
-      <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-    </p>
-    <p class="appointment-item">
-      <label for="appointment-email">Ваш email</label>
-      <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
-    </p>
-    <p class="appointment-item message">
-      <label for="appointment-message">Текст письма</label>
-      <input id="appointment-message" type="tel" name="mail" placeholder="В свободной форме">
-    </p>
-    <button class="button button--popup js-modal" type="submit">Отправить</button>
-  </form>
-  <a href="#" class="popup__button modal-close"></a>
+<section class="popup-wrapper">
+  <div class="popup">
+    <h2 class="popup__title p-none">Напишите нам</h2>
+    <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="appointment-item p-none">
+        <label for="appointment-name">Ваше имя:</label>
+        <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="appointment-item  p-none">
+        <label for="appointment-email">Ваш email:</label>
+        <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
+      </p>
+      <p class="appointment-item message  p-none">
+        <label for="appointment-message">Текст письма:</label>
+        <textarea name="text" placeholder="В свободной форме" id="appointment-message"></textarea>
+      </p>
+      <button class="button button--popup button--red js-modal" type="submit">Отправить</button>
+    </form>
+    <a class="popup__button modal-close"></a>
+  </div>
 </section>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=4b02bf2d-c6c2-4ff9-b953-adf5ab487b54"
         type="text/javascript"></script>

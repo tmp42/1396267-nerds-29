@@ -1,7 +1,9 @@
 const loginLink = document.querySelector(".js-modal");
-const loginPopup = document.querySelector(".popup");
+const loginPopup = document.querySelector(".popup-wrapper");
 const loginClose = loginPopup.querySelector(".modal-close");
 const popupForm = document.querySelector(".appointment-form");
+const sliderControls = document.querySelectorAll(".slider-controls button");
+const sliderElement=document.querySelectorAll(".banner-slide");
 
 popupForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -23,9 +25,6 @@ loginClose.addEventListener("click", function (evt) {
   loginPopup.classList.remove("modal-error");
   document.body.style.overflow="unset";
 });
-
-const sliderControls = document.querySelectorAll(".slider-controls button"),
-  sliderElement=document.querySelectorAll(".banner-slide");
 
 function clearClass(element, className) {
   element.forEach(function (item) {
@@ -58,11 +57,6 @@ ymaps.ready(function () {
       searchControlProvider: 'yandex#search'
     }),
 
-    // Создаём макет содержимого.
-    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-    ),
-
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
       hintContent: 'Собственный значок метки',
       balloonContent: 'Это красивая метка'
@@ -76,6 +70,12 @@ ymaps.ready(function () {
       iconImageSize: [231, 190],
     });
 
-  myMap.geoObjects
-    .add(myPlacemark);
+  myMap.controls.remove("geolocationControl");
+  myMap.controls.remove("searchControl");
+  myMap.controls.remove("trafficControl");
+  myMap.controls.remove("typeSelector");
+  myMap.controls.remove("fullscreenControl");
+  myMap.controls.remove("rulerControl");
+  myMap.behaviors.disable(["scrollZoom"]);
+  myMap.geoObjects.add(myPlacemark);
 });
