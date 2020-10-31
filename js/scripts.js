@@ -7,9 +7,11 @@ const sliderElement=document.querySelectorAll(".banner-slide");
 
 popupForm.addEventListener("submit", function (event) {
   event.preventDefault();
-  if(popupForm.name.value==="" || popupForm.email.value===""){
-    loginPopup.classList.remove("modal-error");
+  if (popupForm.name.value === "" || popupForm.email.value === "") {
     loginPopup.classList.add("modal-error");
+    setTimeout(function () {
+      loginPopup.classList.remove("modal-error");
+    }, 1500);
   }
 });
 
