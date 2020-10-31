@@ -23,6 +23,7 @@
   --basic-yellow: #EFC849;
   --basic-yellow1: #E5A722;
   --basic-yellow2: #EAB534;
+  --basic-yellow3: #fc0;
   --special: #888888;
   --special-map: #666666;
   --special-footer: #444444;
@@ -148,10 +149,6 @@ img {
 
 .header {
   background-color: var(--basic-gray);
-  padding-top: 61px;
-}
-
-.header-inner{
   padding-top: 52px;
 }
 
@@ -357,7 +354,7 @@ img {
 }
 
 .slider-controls button:focus{
-  outline: 2px solid #fc0;
+  outline: 2px solid var(--basic-yellow3);
 }
 
 .slider-controls .current::after {
