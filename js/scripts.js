@@ -36,8 +36,8 @@ sliderControls.forEach(function (button, indexControl) {
   button.addEventListener("click", function (event) {
     event.preventDefault();
     //Очистка
-    clearClass(sliderControls, 'current');
-    clearClass(sliderElement, 'slide-current');
+    clearClass(sliderControls, "current");
+    clearClass(sliderElement, "slide-current");
     sliderElement.forEach(function (slide, slideIndex) {
       if(indexControl===slideIndex){
         slide.classList.add("slide-current");
@@ -50,20 +50,20 @@ sliderControls.forEach(function (button, indexControl) {
 
 //карта
 ymaps.ready(function () {
-  var myMap = new ymaps.Map('map', {
+  var myMap = new ymaps.Map("map", {
       center: [59.938635, 30.323118],
       zoom: 20
     }, {
-      searchControlProvider: 'yandex#search'
+      searchControlProvider: "yandex#search"
     }),
 
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
     }, {
       // Опции.
       // Необходимо указать данный тип макета.
-      iconLayout: 'default#image',
+      iconLayout: "default#image",
       // Своё изображение иконки метки.
-      iconImageHref: 'img/map-marker.png',
+      iconImageHref: "img/map-marker.png",
       // Размеры метки.
       iconImageSize: [231, 190],
     });
