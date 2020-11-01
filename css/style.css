@@ -1332,7 +1332,7 @@ slider-slide__button:focus {
 .popup__title {
   font-size: 45px;
   line-height: 53px;
-  margin-bottom: 34px;
+  margin-bottom: 37px;
 }
 
 .modal-close {
@@ -1374,7 +1374,7 @@ slider-slide__button:focus {
 
 .appointment-item {
   width: 100%;
-  margin-bottom: 31px;
+  margin-bottom: 34px;
 }
 
 .appointment-item:nth-child(1),
@@ -1385,7 +1385,7 @@ slider-slide__button:focus {
 .appointment-item label {
   font-weight: 700;
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
   line-height: 18px;
 }
 
